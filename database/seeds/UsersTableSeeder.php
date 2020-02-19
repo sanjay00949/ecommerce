@@ -19,6 +19,8 @@ class UsersTableSeeder extends Seeder
                 'role' => 'admin',
                 'status' => 'active',
             ),
+
+
             array(
                 'name' => 'Seller One',
                 'email' => 'sellerone@ecom930.com',

@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get("/template",function(){
+    return view('layouts.admin');
+});
+
 Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function(){
     Route::get('/', 'HomeController@admin')->name('admin');
 });
