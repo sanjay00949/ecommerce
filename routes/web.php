@@ -31,6 +31,6 @@ Route::group(['prefix'=>'user','middleware'=>['auth','user']],function(){
     Route::get('/','HomeController@admin')->name('user');
 });
 
-Auth::routes();
+Auth::routes(['register'=>false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
